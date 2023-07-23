@@ -1,0 +1,103 @@
+*{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+	background: #fff;
+	color: #000;
+}
+.logo{
+	background-color: #222328;
+}
+
+header {
+	/* background: #0B6; */
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+footer {
+	padding: 20px;
+	background: #78AD2E;
+	color:#fff;
+}
+
+
+.contenedor-imagen {
+	max-height: 180px;
+	overflow: hidden;
+}
+
+.img-circular{
+	border-radius: 50%;
+	margin-top: 30px;
+}
+
+.widgets > div {
+	/*background: #219;	*/
+	padding: 5px;
+	margin-bottom:15px;  
+}
+
+.contenedor-imagen a {
+	background: #3da5e2;
+	display: inline-block;
+	
+}
+
+.contenedor-imagen:hover img {
+	
+	opacity: .3;
+}
+.card-group{
+	padding-top: 30px;
+}
+.contenedor-tit {
+    background: #3da5e2;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.btn{
+ text-align: center;	
+}
+
+.contaier-fluid{
+height: 250px;;
+}
+
+.navbar-nav a{
+	font-size: 20px;
+	color: #000;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#subscribeModal .modal-content {
+  background-color: #78AD2E;
+  color: #fff;
+  text-align: left; }
+
+#subscribeModal .modal-header, #subscribeModal .modal-footer {
+  border: 0; }
+
+#subscribeModal .close {
+  color: #fff; }
+
+#subscribeModal .form-control {
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.411);
+  color: #fff; }
+  #subscribeModal .form-control:focus {
+    border-color: #49506a; }
+
+.btn-default {
+	color: #fff;
+	text-shadow: none;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	padding: 0.5rem 2rem; }
+	  
+.btn-default:hover,
+.btn-default:focus {
+	background-color: rgba(255, 255, 255, 0.377); }

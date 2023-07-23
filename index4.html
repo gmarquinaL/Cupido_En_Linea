@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bienvenido a CupidoEnLínea</title>
+ 
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min2.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/estilos1.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-danger flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><img src="img/logo3.png" alt="" height="35"></a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="index.html">Cerrar Sesión</a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#busqueda">
+              <span data-feather="search"></span>
+              Búsqueda de personas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mensajes">
+              <span data-feather="message-circle"></span>
+              Mensajes
+              <span class="badge bg-danger text-light rounded-pill align-text-bottom">27</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              Relaciones
+              <span class="badge  bg-danger text-light rounded-pill align-text-bottom">2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              Compras
+            </a>
+          </li>
+          
+        </ul>     
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div id="busqueda" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2" >Búsqueda de personas </h1>
+      </div>
+        <div class="col-md-12 col-lg-12">
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-2">
+                <label for="firstName" class="form-label">Busca:</label>
+                <select class="form-select" id="Genero" required>
+                  <option value> Seleccione...</option>
+                  <option> Hombre</option>
+                  <option> Mujer </option>
+                </select>
+                <div class="invalid-feedback">
+                  Seleccione una opción
+                </div>
+              </div>
+  
+              <div class="col-sm-2">
+                <label for="firstName" class="form-label">Rango de edad:</label>
+                <select class="form-select" id="edad" required>
+                  <option value> Seleccione...</option>
+                  <option> 25-30</option>
+                  <option> 31-35 </option>
+                  <option> 36-40 </option>
+                  <option> 41-45 </option>
+                  <option> 46-50 </option>
+                  <option> 51-60 </option>
+                  <option> 61-65 </option>
+                </select>
+                <div class="invalid-feedback">
+                  Seleccione una opción
+                </div>
+              </div>
+              <div class="col-md-2">
+                <label for="country" class="form-label">País</label>
+                <input type="text" class="form-control" id="customFile" >
+              </div>
+              
+              <div class="col-md-2">
+                <label for="country" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="customFile" > 
+              </div>
+
+              <div class="col-sm-2">
+                <label for="firstName" class="form-label">Tipo de relación:</label>
+                <select class="form-select" id="relacion" required>
+                  <option value> Seleccione...</option>
+                  <option> Amorosa</option>
+                  <option> Amistad </option>
+                </select>
+                <div class="invalid-feedback">
+                  Seleccione una opción
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+              <button class="w-100 btn btn-danger btn-lg" type="submit">Buscar</button>
+            </div>
+            </div>
+          </form>
+        </div>
+      <!--======================================================================-->
+      <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0">Resultados</h6>
+        <div class="d-flex text-muted pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+    
+          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+              <strong class="text-gray-dark">Carlos Bernechea Rodríguez</strong>
+              <a href="#">Contactarme</a>
+            </div>
+            <span class="d-block">@CarlosBernechea</span>
+          </div>
+        </div>
+        <div class="d-flex text-muted pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+    
+          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+              <strong class="text-gray-dark">José Alfredo Fernández</strong>
+              <a href="#">Contactarme</a>
+            </div>
+            <span class="d-block">@JoseFernandez</span>
+          </div>
+        </div>
+        <div class="d-flex text-muted pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"  role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+    
+          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+              <strong class="text-gray-dark">José María Martinez</strong>
+              <a href="#">Contactarme</a>
+            </div>
+            <span class="d-block">@josemartinez</span>
+          </div>
+        </div>
+        <small class="d-block text-end mt-3">
+          <a href="#">Otras sugerencias</a>
+        </small>
+      </div>
+
+
+      <!--========================================================================-->
+      
+      
+      
+      <div id="mensajes" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2" >Mensajes </h1>
+      </div>
+      <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <a href="">
+        <div class="d-flex text-muted pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+         
+          <p class="pb-3 mb-0 small lh-sm border-bottom">
+            <strong class="d-block text-gray-dark">@josemartinez</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi eaque doloremque in similique beatae vero, consequuntur explicabo a voluptatibus delectus, velit expedita ipsum. Officia sequi fugit deserunt dolores similique?
+          </p>
+        </div>
+        </a>
+
+        <a href="">
+        <div class="d-flex text-muted pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+    
+          <p class="pb-3 mb-0 small lh-sm border-bottom">
+            <strong class="d-block text-gray-dark">@carlasofiamontero</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum corrupti quo animi architecto, iure libero sequi velit voluptatem, tempora tempore. Totam accusantium aliquid eligendi ipsam id amet aperiam deleniti!
+          </p>
+        </div>
+        </a>
+
+        <a href="">
+        <div class="d-flex text-muted pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"/><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+    
+          <p class="pb-3 mb-0 small lh-sm border-bottom">
+            <strong class="d-block text-gray-dark">@JasmineSeguraCampos</strong>
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio blanditiis totam velit laudantium id officia soluta hic adipisci voluptate, facilis aperiam, iure corrupti fuga vitae! Consequuntur excepturi id ad aliquid.
+          </p>
+        </div>
+        </a>
+        <small class="d-block text-end mt-3">
+          <a href="#">Leer todos los mensajes</a>
+        </small>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="js/dashboard.js"></script>
+  </body>
+</html>
